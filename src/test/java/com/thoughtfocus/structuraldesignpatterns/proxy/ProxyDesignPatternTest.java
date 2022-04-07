@@ -1,8 +1,6 @@
-package com.thoughtfocus.designpatterns.creationaldesignpatterns.structuraldesignpatterns;
+package com.thoughtfocus.structuraldesignpatterns.proxy;
 
-import com.thoughtfocus.structuraldesignpatterns.proxy.ProxyInternet;
 import org.junit.Test;
-
 import java.util.List;
 
 import static org.junit.Assert.assertFalse;
@@ -19,4 +17,5 @@ public class ProxyDesignPatternTest {
         List<String> proxyInternet = ProxyInternet.bannedSites;
         assertFalse("abc.com",false);
     }
+
 }

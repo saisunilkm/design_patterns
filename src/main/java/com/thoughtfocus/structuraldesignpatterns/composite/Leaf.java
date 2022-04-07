@@ -1,6 +1,5 @@
 package com.thoughtfocus.structuraldesignpatterns.composite;
 
-import com.thoughtfocus.structuraldesignpatterns.adapter.AppleCharger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,8 +14,9 @@ public class Leaf implements Component {
         this.price = price;
     }
     @Override
-    public void price() {
+    public long price() {
         logger.info(name + " : "+ price);
 
+        return 0;
     }
 }

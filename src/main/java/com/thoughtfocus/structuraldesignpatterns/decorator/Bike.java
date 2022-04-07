@@ -1,5 +1,5 @@
 package com.thoughtfocus.structuraldesignpatterns.decorator;
 
 public interface Bike {
-    public abstract void assembleBike();
+    public  void assembleBike();
 }
