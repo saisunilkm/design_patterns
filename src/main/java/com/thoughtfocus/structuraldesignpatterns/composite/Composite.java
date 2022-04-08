@@ -19,12 +19,11 @@ public class Composite implements Component {
     }
 
     @Override
-    public long price() {
+    public String price() {
         logger.info(name);
         for(Component component : components){
             component.price();
         }
-
-        return 0;
+        return price();
     }
 }

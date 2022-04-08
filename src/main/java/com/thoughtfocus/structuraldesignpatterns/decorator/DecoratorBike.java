@@ -8,8 +8,9 @@ public class DecoratorBike implements Bike {
     }
 
     @Override
-    public void assembleBike() {
+    public String assembleBike() {
         bike.assembleBike();
 
+        return null;
     }
 }

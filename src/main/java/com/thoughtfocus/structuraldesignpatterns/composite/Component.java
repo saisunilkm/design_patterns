@@ -1,5 +1,5 @@
 package com.thoughtfocus.structuraldesignpatterns.composite;
 
 public interface Component {
-   public long price();
+   public String price();
 }

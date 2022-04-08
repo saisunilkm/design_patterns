@@ -11,9 +11,10 @@ public class DivideNumbers implements Chain {
         this.nextInChain = nextChain;
     }
     @Override
-    public short calculate(Numbers request) {
+    public int calculate(Numbers request) {
         if(request.getCalcWanted() == "div"){
-            logger.info(request.getNumber1()+ " / " + request.getNumber2()+ " = "+(request.getNumber1()) / request.getNumber2());
+            logger.info("Addition of {} + {} = {}", request.getNumber1(), request.getNumber2(), (request.getNumber1() / request.getNumber2()));
+            return (request.getNumber1() / request.getNumber2());
         }else{
             logger.info("Only works for add, mult and div");
         }

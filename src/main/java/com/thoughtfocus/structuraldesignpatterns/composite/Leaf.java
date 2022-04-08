@@ -14,9 +14,9 @@ public class Leaf implements Component {
         this.price = price;
     }
     @Override
-    public long price() {
+    public String price() {
         logger.info(name + " : "+ price);
 
-        return 0;
+        return price();
     }
 }

@@ -12,13 +12,12 @@ public class AddNumbers implements Chain {
     }
 
     @Override
-    public short calculate(Numbers request) {
+    public int calculate(Numbers request) {
         if(request.getCalcWanted() == "add"){
-            logger.info(request.getNumber1()+ " + " + request.getNumber2()+ " = "+(request.getNumber1()) + request.getNumber2());
-        }else{
-            nextInChain.calculate(request);
+            logger.info("Addition of {} + {} = {}", request.getNumber1(), request.getNumber2(), (request.getNumber1() + request.getNumber2()));
+            return request.getNumber1() + request.getNumber2();
         }
-
+        nextInChain.calculate(request);
         return 0;
     }
 }
