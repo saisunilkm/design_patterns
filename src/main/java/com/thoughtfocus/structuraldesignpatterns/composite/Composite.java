@@ -24,6 +24,6 @@ public class Composite implements Component {
         for(Component component : components){
             component.price();
         }
-        return price();
+        return "This is from composite price";
     }
 }

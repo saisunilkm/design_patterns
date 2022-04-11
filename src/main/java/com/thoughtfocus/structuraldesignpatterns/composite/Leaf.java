@@ -17,6 +17,6 @@ public class Leaf implements Component {
     public String price() {
         logger.info(name + " : "+ price);
 
-        return price();
+        return "This is from leaf price";
     }
 }

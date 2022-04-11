@@ -7,12 +7,12 @@ public class Bike implements Vehical {
     private static Logger logger = LoggerFactory.getLogger(Bike.class);
 
     @Override
-    public char brands() {
+    public String brands() {
         logger.info("Royal Enfield");
         logger.info("Yamaha");
         logger.info("KTM");
         logger.info("TVS");
-        return 0;
+        return "This is from Bike brands";
     }
 
 }

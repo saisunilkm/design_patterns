@@ -7,14 +7,14 @@ public class Car implements Vehical {
     private static Logger logger = LoggerFactory.getLogger(Car.class);
 
     @Override
-    public char brands() {
+    public String brands() {
         logger.info("Hyundai");
         logger.info("Audi");
         logger.info("Kia");
         logger.info("BMW");
         logger.info("Jaguar");
         logger.info("Ferrari");
-        return 0;
+        return "This is from Car brands";
     }
 
 }

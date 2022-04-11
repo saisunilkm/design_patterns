@@ -31,7 +31,7 @@ public class CompositeDesignPatternTest {
         computer.addComponents(peripherals);
         computer.addComponents(cabinet);
 
-        assertEquals(computer.price(),"5000");
+        assertEquals("This is from composite price",computer.price());
 
     }
 
