@@ -4,11 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CommandTest {
+class CommandTest {
     @Test
-    public void whenRemoteSetToTurnOnLight_AndButtonPressed_LightShouldTurnOn_LightShouldTurnOff() {
+    void commandTest() {
 
         Light livingRoomLight = new Light();
+
+        Fan livingRoomFan = new Fan();
 
         HomeAutomationRemote remote = new HomeAutomationRemote();
 
@@ -18,16 +20,6 @@ public class CommandTest {
         remote.setCommand(new TurnOffLightCommand(livingRoomLight));
         assertEquals("Turning off light.Light is Off", remote.buttonPressed());
 
-    }
-
-
-    @Test
-    public void whenRemoteSetToStartFan_AndButtonPressed_FanShouldStart_FanShouldStop() {
-
-        Fan livingRoomFan = new Fan();
-
-        HomeAutomationRemote remote = new HomeAutomationRemote();
-
         remote.setCommand(new StartFanCommand(livingRoomFan));
         assertEquals("Starting fan...Fan started...", remote.buttonPressed());
 
@@ -35,5 +27,6 @@ public class CommandTest {
         assertEquals("Stopping fan...Fan stopped...", remote.buttonPressed());
 
     }
+
 
 }

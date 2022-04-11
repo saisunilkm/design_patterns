@@ -6,15 +6,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class SingletonDesignPatternTest {
+class SingletonDesignPatternTest {
     @Test
-    public void lazyInitialization() {
+    void lazyInitialization() {
         LazyInitialization instance = LazyInitialization.getInstance();
 
-    }
-    @Test
-    public void eagerInitialization () {
         EagerInitialization instance1 = EagerInitialization.getInstance();
-
     }
+
 }

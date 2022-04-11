@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class StateDesignPatternTest {
+class StateDesignPatternTest {
     @Test
-    public void givenNewPackage_AfterGoingToNextState_StatusShouldBeDeliveredAndThenReceived() {
+    void stateDesignPatternTest() {
         Package pkg =new Package();
         assertEquals(pkg.printStatus(),"Package ordered, not delivered to the office yet.");
 
@@ -16,11 +16,6 @@ public class StateDesignPatternTest {
         pkg.nextState();
         assertEquals(pkg.printStatus(),"Package has been received");
 
-        pkg.nextState();
-    }
-    @Test
-    public void givenDeliveredState_previousStateStatus_ShouldBeOrderedState(){
-        Package pkg =new Package();
         pkg.setState(new DeliveredState());
         pkg.previousState();
 

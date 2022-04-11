@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class IteratorDesignPatternTest {
+class IteratorDesignPatternTest {
     @Test
-    public void nameAndAge(){
+     void nameAndAge(){
         NameAndAgeRepository nameAndAgeRepository = new NameAndAgeRepository();
         String allNamesAndAge = "";
 

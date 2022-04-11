@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MementoTest {
+class MementoTest {
     @Test
-    public void shouldGetOriginalContentBackAfterChangingTheContent() {
+     void shouldGetOriginalContentBackAfterChangingTheContent() {
 
         Life life = new Life();
 

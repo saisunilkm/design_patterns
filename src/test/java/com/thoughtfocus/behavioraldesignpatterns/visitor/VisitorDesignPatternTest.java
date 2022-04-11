@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import static com.thoughtfocus.behavioraldesignpatterns.visitor.VehicleService.calculateTotal;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class VisitorDesignPatternTest {
+class VisitorDesignPatternTest {
 
     @Test
-    public void totalServiceCharge(){
+    void totalServiceCharge(){
         Vehicle[] vehicles = new Vehicle[]{
                 new Car("Blue",2015),
                 new Van(6000,4),

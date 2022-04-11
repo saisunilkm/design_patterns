@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ObserverDesignPatternTest {
+class ObserverDesignPatternTest {
     @Test
-    public void message(){
+    void message(){
         MessageSubscriberOne messageSubscriberOne = new MessageSubscriberOne();
         MessageSubscriberTwo messageSubscriberTwo = new MessageSubscriberTwo();
         MessageSubscriberThree messageSubscriberThree = new MessageSubscriberThree();

@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MediatorTest {
+class MediatorTest {
     @Test
-    public void message(){
+     void message(){
         ChatMediator mediator = new ChatMediatorImpl();
         User user1 = new UserImpl(mediator,"Rohith");
         User user2 = new UserImpl(mediator,"Sunil");

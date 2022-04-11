@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ChainOfResponsibilityDesignPatternTest {
+class ChainOfResponsibilityDesignPatternTest {
     @Test
-    public void addNumbers(){
+     void addNumbers(){
         Chain chainCal1 = new AddNumbers();
         Chain chainCal2 = new MultiplyNumbers();
         Chain chainCal3 = new DivideNumbers();
@@ -18,7 +18,7 @@ public class ChainOfResponsibilityDesignPatternTest {
         assertEquals(15,chainCal1.calculate(request));
     }
     @Test
-    public void divideNumbers(){
+     void divideNumbers(){
         Chain chainCal1 = new AddNumbers();
         Chain chainCal2 = new MultiplyNumbers();
         Chain chainCal3 = new DivideNumbers();
@@ -30,7 +30,7 @@ public class ChainOfResponsibilityDesignPatternTest {
         assertEquals(4,chainCal3.calculate(request));
     }
     @Test
-    public void MultiplyNumbers() {
+     void MultiplyNumbers() {
         Chain chainCal1 = new AddNumbers();
         Chain chainCal2 = new MultiplyNumbers();
         Chain chainCal3 = new DivideNumbers();
@@ -42,7 +42,7 @@ public class ChainOfResponsibilityDesignPatternTest {
         assertEquals(100, chainCal2.calculate(request));
     }
     @Test
-    public void ZeroShouldCome() {
+     void ZeroShouldCome() {
         Chain chainCal1 = new AddNumbers();
         Chain chainCal2 = new MultiplyNumbers();
         Chain chainCal3 = new DivideNumbers();

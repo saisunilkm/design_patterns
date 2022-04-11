@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CompositeDesignPatternTest {
+class CompositeDesignPatternTest {
     @Test
-    public void totalComputerPrice(){
+    void totalComputerPrice(){
         Component mouse = new Leaf("Mouse",500.00);
         Component keyboard = new Leaf("Keyboard",1000.00);
         Component speaker = new Leaf("Speaker",300.00);
