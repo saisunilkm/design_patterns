@@ -9,8 +9,7 @@ public class DecoratorBike implements Bike {
 
     @Override
     public String assembleBike() {
-        bike.assembleBike();
+        return bike.assembleBike();
 
-        return null;
     }
 }

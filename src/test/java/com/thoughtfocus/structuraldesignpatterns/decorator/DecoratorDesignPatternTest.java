@@ -6,18 +6,20 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class DecoratorDesignPatternTest {
     @Test
-    public void luxuryBike(){
-        Bike luxuryBike = new LuxuryBike(new BasicBike());
-        assertEquals(luxuryBike.assembleBike(),"Adding features to Luxury Bike");
-    }
-    @Test
-    public void basicBike() {
-        Bike basicBike = new BasicBike();
-        assertEquals(basicBike.assembleBike(),"Basic Bike...");
-    }
-    @Test
-    public void sportsBike() {
+    public void decoratorForSportsBike_IncludingBasicBike() {
         Bike sportsBike = new SportsBike(new BasicBike());
-        assertEquals(sportsBike.assembleBike(),"Adding features of sports bike");
+        assertEquals(sportsBike.assembleBike(), "Basic Bike...With Sports Bike Features");
+    }
+
+    @Test
+    public void decoratorForLuxuryBike_IncludingBasicBike() {
+        Bike luxuryBike = new LuxuryBike(new BasicBike());
+        assertEquals(luxuryBike.assembleBike(), "Basic Bike...With Luxury Bike Features");
+    }
+
+    @Test
+    public void decoratorForLuxuryBikeAndSportsBike_IncludingBasicBike() {
+        Bike sportsLuxuryBike = new SportsBike(new LuxuryBike(new BasicBike()));
+        assertEquals(sportsLuxuryBike.assembleBike(), "Basic Bike...With Luxury Bike FeaturesWith Sports Bike Features");
     }
 }

@@ -7,7 +7,10 @@ public class LuxuryBike extends DecoratorBike {
 
     @Override
     public String assembleBike() {
-        super.assembleBike();
-        return "Adding features to Luxury Bike";
+        return super.assembleBike() + luxuryBikeFeatures();
     }
+    private String luxuryBikeFeatures(){
+        return "With Luxury Bike Features";
+    }
+
 }

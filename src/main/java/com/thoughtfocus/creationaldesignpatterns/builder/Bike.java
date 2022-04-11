@@ -16,11 +16,12 @@ public class Bike {
 
     @Override
     public String toString() {
-        return "Bike{" +
-                "brand='" + brand + '\'' +
-                ", cc=" + cc +
-                ", price=" + price +
-                ", noOfStrokes=" + noOfStrokes +
-                '}';
+        StringBuilder bike = new StringBuilder();
+        bike.append("Bike: brand=").append(brand)
+                .append(", cc =").append(cc)
+                .append(", price =").append(price)
+                .append(", noOfStrokes").append(noOfStrokes);
+        String result = bike.toString();
+        return result;
     }
 }

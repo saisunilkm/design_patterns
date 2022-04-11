@@ -7,7 +7,9 @@ public class SportsBike extends DecoratorBike {
 
     @Override
     public String assembleBike() {
-        super.assembleBike();
-        return "Adding features of sports bike";
+      return super.assembleBike() + sportsBikeFeatures();
+    }
+    private String sportsBikeFeatures(){
+        return "With Sports Bike Features";
     }
 }
