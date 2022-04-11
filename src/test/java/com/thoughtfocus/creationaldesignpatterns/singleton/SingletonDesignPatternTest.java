@@ -2,7 +2,7 @@ package com.thoughtfocus.creationaldesignpatterns.singleton;
 
 import com.thoughtfocus.creationaldesignpatterns.singleton.EagerInitialization;
 import com.thoughtfocus.creationaldesignpatterns.singleton.LazyInitialization;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
