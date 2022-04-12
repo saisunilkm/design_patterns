@@ -1,21 +1,18 @@
 package com.thoughtfocus.designpatterns.creational.factory;
 
-import com.thoughtfocus.designpatterns.creational.factory.Bike;
-import com.thoughtfocus.designpatterns.creational.factory.Car;
-import com.thoughtfocus.designpatterns.creational.factory.Vehical;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FactoryDesignPatternTest {
 
     @Test
-    void factoryTest(){
+    void factoryTest() {
         Vehical vehical = new Bike();
-        assertEquals("This is from Bike brands",vehical.brands());
+        assertEquals("This is from Bike brands", vehical.brands());
 
         Vehical vehical1 = new Car();
-        assertEquals("This is from Car brands",vehical1.brands());
+        assertEquals("This is from Car brands", vehical1.brands());
     }
 
 }
