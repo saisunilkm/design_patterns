@@ -1,24 +1,20 @@
 package com.thoughtfocus.designpatterns.structural.decorator;
 
-import com.thoughtfocus.designpatterns.structural.decorator.BasicBike;
-import com.thoughtfocus.designpatterns.structural.decorator.Bike;
-import com.thoughtfocus.designpatterns.structural.decorator.LuxuryBike;
-import com.thoughtfocus.designpatterns.structural.decorator.SportsBike;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DecoratorDesignPatternTest {
     @Test
     void decoratorTest() {
         Bike sportsBike = new SportsBike(new BasicBike());
-        assertEquals(sportsBike.assembleBike(), "Basic Bike...With Sports Bike Features");
+        assertEquals("Basic Bike...With Sports Bike Features", sportsBike.assembleBike());
 
         Bike luxuryBike = new LuxuryBike(new BasicBike());
-        assertEquals(luxuryBike.assembleBike(), "Basic Bike...With Luxury Bike Features");
+        assertEquals("Basic Bike...With Luxury Bike Features", luxuryBike.assembleBike());
 
         Bike sportsLuxuryBike = new SportsBike(new LuxuryBike(new BasicBike()));
-        assertEquals(sportsLuxuryBike.assembleBike(), "Basic Bike...With Luxury Bike FeaturesWith Sports Bike Features");
+        assertEquals("Basic Bike...With Luxury Bike FeaturesWith Sports Bike Features", sportsLuxuryBike.assembleBike());
     }
 
 }

@@ -14,5 +14,4 @@ class FactoryDesignPatternTest {
         Vehical vehical1 = new Car();
         assertEquals("This is from Car brands", vehical1.brands());
     }
-
 }

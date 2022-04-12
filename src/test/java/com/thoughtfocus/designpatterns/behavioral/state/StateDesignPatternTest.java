@@ -8,18 +8,18 @@ class StateDesignPatternTest {
     @Test
     void stateDesignPatternTest() {
         Package pkg = new Package();
-        assertEquals(pkg.printStatus(), "Package ordered, not delivered to the office yet.");
+        assertEquals("Package ordered, not delivered to the office yet.", pkg.printStatus());
 
         pkg.nextState();
-        assertEquals(pkg.printStatus(), "Package delivered to the post office,not received yet.");
+        assertEquals("Package delivered to the post office,not received yet.", pkg.printStatus());
 
         pkg.nextState();
-        assertEquals(pkg.printStatus(), "Package has been received");
+        assertEquals("Package has been received", pkg.printStatus());
 
         pkg.setState(new DeliveredState());
         pkg.previousState();
 
-        assertEquals(pkg.printStatus(), "Package ordered, not delivered to the office yet.");
+        assertEquals("Package ordered, not delivered to the office yet.", pkg.printStatus());
     }
 
 }

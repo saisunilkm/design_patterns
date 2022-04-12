@@ -10,5 +10,4 @@ class SingletonDesignPatternTest {
 
         EagerInitialization instance1 = EagerInitialization.getInstance();
     }
-
 }

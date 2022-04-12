@@ -1,11 +1,8 @@
 package com.thoughtfocus.designpatterns.structural.adapter;
 
-import com.thoughtfocus.designpatterns.structural.adapter.ChromeDriver;
-import com.thoughtfocus.designpatterns.structural.adapter.IEDriver;
-import com.thoughtfocus.designpatterns.structural.adapter.WebDriverAdapter;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AdapterPatternDesignPatternTest {
     @Test

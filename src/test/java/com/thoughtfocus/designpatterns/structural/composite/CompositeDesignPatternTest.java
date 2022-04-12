@@ -1,21 +1,18 @@
 package com.thoughtfocus.designpatterns.structural.composite;
 
-import com.thoughtfocus.designpatterns.structural.composite.Component;
-import com.thoughtfocus.designpatterns.structural.composite.Composite;
-import com.thoughtfocus.designpatterns.structural.composite.Leaf;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CompositeDesignPatternTest {
     @Test
-    void totalComputerPrice(){
-        Component mouse = new Leaf("Mouse",500.00);
-        Component keyboard = new Leaf("Keyboard",1000.00);
-        Component speaker = new Leaf("Speaker",300.00);
-        Component hardDisk = new Leaf("HardDisk",3000.00);
-        Component CPU = new Leaf("CPU",5000.00);
-        Component RAM = new Leaf("RAM",4000.00);
+    void totalComputerPrice() {
+        Component mouse = new Leaf("Mouse", 500.00);
+        Component keyboard = new Leaf("Keyboard", 1000.00);
+        Component speaker = new Leaf("Speaker", 300.00);
+        Component hardDisk = new Leaf("HardDisk", 3000.00);
+        Component CPU = new Leaf("CPU", 5000.00);
+        Component RAM = new Leaf("RAM", 4000.00);
 
         Composite cabinet = new Composite("Cabinet");
         Composite motherBoard = new Composite("MotherBoard");
@@ -34,9 +31,7 @@ class CompositeDesignPatternTest {
         computer.addComponents(peripherals);
         computer.addComponents(cabinet);
 
-        assertEquals("This is from composite price",computer.price());
+        assertEquals("This is from composite price", computer.price());
 
     }
-
-
 }

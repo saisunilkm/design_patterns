@@ -1,13 +1,12 @@
 package com.thoughtfocus.designpatterns.behavioral.strategy;
 
-import com.thoughtfocus.designpatterns.behavioral.strategy.*;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class StrategyDesignPatternTest {
+class StrategyDesignPatternTest {
     @Test
-    public void strategyTest() {
+    void strategyTest() {
         Operations operations = new Operations(new AddOperation());
         assertEquals(15, operations.executeOperation(10, 5));
 
