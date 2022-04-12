@@ -1,6 +1,6 @@
 package com.thoughtfocus.behavioraldesignpatterns.visitor;
 
-public class MotorBike implements Vehicle{
+public class MotorBike implements Vehicle {
 
     private int engineCapacity;
     private String brand;

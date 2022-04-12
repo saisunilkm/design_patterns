@@ -1,5 +1,5 @@
 package com.thoughtfocus.behavioraldesignpatterns.iterator;
-/*
+/**
 Iterator Design Pattern comes under the Behavioral Design Patterns.
 
 The Iterator Design Pattern will provide access to different collections of objects. The best example of Iterator

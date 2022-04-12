@@ -1,5 +1,5 @@
 package com.thoughtfocus.structuraldesignpatterns.adapter;
-/*
+/**
 Adaptor Design Pattern will come under Structural Design Patterns.
 
 The Adaptor Design Pattern acts like a bridge in between two interface classes. With the help of Adaptor

@@ -1,6 +1,6 @@
 package com.thoughtfocus.behavioraldesignpatterns.visitor;
 
-public class Car implements Vehicle{
+public class Car implements Vehicle {
     private String color;
     private int manufactureDate;
 

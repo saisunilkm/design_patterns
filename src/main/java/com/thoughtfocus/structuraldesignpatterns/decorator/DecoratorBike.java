@@ -1,7 +1,7 @@
 package com.thoughtfocus.structuraldesignpatterns.decorator;
 
 public class DecoratorBike implements Bike {
-    private Bike bike;
+    private final Bike bike;
 
     public DecoratorBike(Bike bike) {
         this.bike = bike;

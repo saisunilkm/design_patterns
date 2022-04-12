@@ -1,5 +1,5 @@
 package com.thoughtfocus.structuraldesignpatterns.bridge;
-/*
+/**
 The Bridge Design Pattern comes under Structural Design Patterns. This Bridge Design Patterns will allow to separate
 the abstraction from the implementation. I have created the classes for Automobile(abstract),Bike, Car,
 Workshop(interface), Produce and Manufacture and Main class.

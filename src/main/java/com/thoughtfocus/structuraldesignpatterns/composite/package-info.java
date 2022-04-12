@@ -1,5 +1,5 @@
 package com.thoughtfocus.structuraldesignpatterns.composite;
-/*
+/**
 Composite Design Pattern comes under Structural Design Patterns.
 
 This Composite Design Pattern looks like a tree structure. Composite Object is nothing but which holds the multiple

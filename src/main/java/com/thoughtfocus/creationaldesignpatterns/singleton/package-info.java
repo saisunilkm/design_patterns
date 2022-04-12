@@ -1,5 +1,5 @@
 package com.thoughtfocus.creationaldesignpatterns.singleton;
-/*
+/**
 The Singleton Design Pattern comes under Creational Design Patterns.
 
 This pattern involves a single class which is responsible to create an object while making sure that only single
