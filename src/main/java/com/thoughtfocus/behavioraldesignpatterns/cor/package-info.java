@@ -1,5 +1,5 @@
-package com.thoughtfocus.behavioraldesignpatterns.chainofresponsibility;
-/*
+package com.thoughtfocus.behavioraldesignpatterns.cor;
+/**
 Chain of Responsibility comes under Behavioral Design Patterns.
 
 In Chain of Responsibility Design Pattern its request from the client is passed to a chain of objects to process

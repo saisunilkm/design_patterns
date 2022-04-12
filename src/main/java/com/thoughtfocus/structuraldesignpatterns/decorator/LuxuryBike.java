@@ -9,7 +9,8 @@ public class LuxuryBike extends DecoratorBike {
     public String assembleBike() {
         return super.assembleBike() + luxuryBikeFeatures();
     }
-    private String luxuryBikeFeatures(){
+
+    private String luxuryBikeFeatures() {
         return "With Luxury Bike Features";
     }
 

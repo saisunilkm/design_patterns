@@ -1,5 +1,5 @@
 package com.thoughtfocus.creationaldesignpatterns.builder;
-/*
+/**
 The Builder Design pattern comes under Creational Design Pattern
 
 Builder pattern aims to “Separate the construction of a complex object from its representation so that the same

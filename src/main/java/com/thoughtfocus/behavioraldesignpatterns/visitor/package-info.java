@@ -1,5 +1,5 @@
 package com.thoughtfocus.behavioraldesignpatterns.visitor;
-/*
+/**
    In the Visitor Design Pattern we are going to use two methods. There are accept() method and visit() method.
 The accept method accepts a visitor. It is provided by the visitable class. The visit() method is called every
 time when we visit an element. This is implemented by the visitor class.

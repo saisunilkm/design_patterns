@@ -1,5 +1,5 @@
 package com.thoughtfocus.structuraldesignpatterns.decorator;
-/*
+/**
 The Decorator Design Pattern comes under Structural Design Patterns.
 
 In the Decorator Design Pattern we can attach additional responsibilities to an object dynamically. It allows new

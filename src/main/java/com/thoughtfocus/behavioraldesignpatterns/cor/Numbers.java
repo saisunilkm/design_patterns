@@ -1,4 +1,4 @@
-package com.thoughtfocus.behavioraldesignpatterns.chainofresponsibility;
+package com.thoughtfocus.behavioraldesignpatterns.cor;
 
 public class Numbers {
     private int number1;

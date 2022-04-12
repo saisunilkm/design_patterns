@@ -1,6 +1,6 @@
 package com.thoughtfocus.behavioraldesignpatterns.visitor;
 
-public class Van implements Vehicle{
+public class Van implements Vehicle {
 
     private int storageCapacity;
     private int numberOfDoors;

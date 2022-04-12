@@ -1,4 +1,4 @@
-package com.thoughtfocus.behavioraldesignpatterns.chainofresponsibility;
+package com.thoughtfocus.behavioraldesignpatterns.cor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,11 +15,12 @@ public class MultiplyNumbers implements Chain {
 
     @Override
     public int calculate(Numbers request) {
-        if(request.getCalcWanted() == "mult"){
-            logger.info("Addition of {} + {} = {}", request.getNumber1(), request.getNumber2(), (request.getNumber1() * request.getNumber2()));
-            return (request.getNumber1() * request.getNumber2());
+        if (request.getCalcWanted() == "mult") {
+            int result = request.getNumber1() * request.getNumber2();
+            logger.info("Addition of {} + {} = {}", request.getNumber1(), request.getNumber2(), result);
+            return result;
         }
-            nextInChain.calculate(request);
+        nextInChain.calculate(request);
 
         return 0;
     }

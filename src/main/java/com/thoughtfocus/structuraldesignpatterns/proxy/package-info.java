@@ -1,5 +1,5 @@
 package com.thoughtfocus.structuraldesignpatterns.proxy;
-/*
+/**
 Proxy Design Pattern comes under Structural Design Patterns.
 
 It will act like a protection wall in between two ends. We can take the best example as, if we search for any website
